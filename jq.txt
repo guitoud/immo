@@ -1,0 +1,1 @@
+cat jsonrachidou.json | jq -r .posts[]| {(.tags[].title): .url}
